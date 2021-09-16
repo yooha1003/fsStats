@@ -10,7 +10,7 @@
 ## How to install this script
 + <b>Download packages</b>
 ```
-git clone
+git clone https://github.com/yooha1003/fsStats.git
 ```
 + <b>Install modules</b>
 ```
