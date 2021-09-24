@@ -70,15 +70,15 @@ aparcrh_nvol = aparcrh_df[3].to_numpy(dtype=float) / float(icvVal) * 100 # P (no
 aparcrh_nvol_df = pd.DataFrame(aparcrh_nvol)
 
 # aseg
-aseg_stats = pd.concat([aseg_df[4], aseg_df[3], aseg_nvol_df], axis=1)
+aseg_stats = pd.concat([aseg_df[4], aseg_nvol_df, aseg_df[3]], axis=1)
 aseg_stats.columns = ['Region','V','P']
 aseg_stats['T'] = 0
 aseg_stats = aseg_stats[['Region','P','T','V']]
 
 # aparc
-aparclh_stats = pd.concat([aparclh_df[0], aparclh_nvol_df, aparclh_df[4],  aparclh_df[3]], axis=1)
+aparclh_stats = pd.concat([aparclh_df[0], aparclh_df[3], aparclh_df[4], aparclh_nvol_df], axis=1)
 aparclh_stats.columns = ['Region', 'P', 'T', 'V']
-aparcrh_stats = pd.concat([aparcrh_df[0], aparcrh_nvol_df, aparcrh_df[4],  aparcrh_df[3]], axis=1)
+aparcrh_stats = pd.concat([aparcrh_df[0], aparcrh_df[3], aparcrh_df[4], aparcrh_nvol_df], axis=1)
 aparcrh_stats.columns = ['Region', 'P', 'T', 'V']
 
 # combine aseg+aparc
