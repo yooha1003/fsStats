@@ -3,7 +3,7 @@
 
 ## Description
 + Easy extraction script of subcortical (aseg.stats) and cortical (aparc*.stats) measurements
-+ Output is a table including Region name <b>(Region)</b> / ICV normalized volume <b>(P)</b> / Cortical thickness <b>(T)</b> / Native volume <b>(V)</b>
++ Output is a table including Region name <b>(Region)</b> / ICV normalized volume <b>(V)</b> / Cortical thickness <b>(T)</b> / Native volume <b>(P)</b>
 + This script only supports FreeSurfer 6.0 and above versions (_DKT-atlas stats only_)
 
 
